@@ -6,6 +6,7 @@ variable "zone" {
 variable "machine_type" {
   description = "List of machine types for the instances"
   type        = string
+  default     = "e2-micro"
 }
 
 variable "name" {
@@ -14,7 +15,8 @@ variable "name" {
 }
 
 variable "default_labels" {
-  type = map(string)
+  description = "value of the default labels to apply to all resources"
+  type        = map(string)
 }
 
 variable "region" {
