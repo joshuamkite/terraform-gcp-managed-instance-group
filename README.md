@@ -56,6 +56,7 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| <a name="input_bucket"></a> [bucket](#input\_bucket) | The name of the bucket to store the terraform state file. | <pre>object({<br/>    name   = string<br/>    prefix = string<br/>  })</pre> | n/a | yes |
 | <a name="input_default_labels"></a> [default\_labels](#input\_default\_labels) | value of the default labels to apply to all resources | `map(string)` | n/a | yes |
 | <a name="input_machine_type"></a> [machine\_type](#input\_machine\_type) | List of machine types for the instances | `string` | `"e2-micro"` | no |
 | <a name="input_name"></a> [name](#input\_name) | Name to aply for all resources in stack | `string` | n/a | yes |

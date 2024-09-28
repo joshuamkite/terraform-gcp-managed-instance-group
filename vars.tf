@@ -28,3 +28,11 @@ variable "project" {
   description = "The project ID where the resources will be created."
   type        = string
 }
+
+variable "bucket" {
+  description = "The name of the bucket to store the terraform state file."
+  type = object({
+    name   = string
+    prefix = string
+  })
+}

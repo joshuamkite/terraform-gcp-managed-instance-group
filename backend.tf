@@ -1,6 +1,7 @@
 terraform {
   backend "gcs" {
-    bucket = "terraform-state-joshuamkite-com"
-    prefix = "terraform/state"
+    bucket = var.bucket.name
+    prefix = var.bucket.prefix
   }
 }
+
